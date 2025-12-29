@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superkeeper</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div>
+            <!-- Logo -->
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Superkeeper Logo" width="120">
+
+            <h1>Superkeeper</h1>
+            <p>Your AI-Powered Inventory & Smart POS Assistant</p>
+
+            <!-- Google Sign-In Button -->
+            <button id="google-signin-btn">
+    <span>Continue with Google</span>
+</button>
+
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div>
+            <h2>Scan, Store & Track Your Inventory Instantly</h2>
+            <p>Manage your store effortlessly using AI and smart detection.</p>
+        </div>
+    </main>
+<script type="module" src="{{ url_for('static', filename='js/firebase-config.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+</body>
+</html>

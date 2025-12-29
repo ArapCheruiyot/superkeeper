@@ -1,0 +1,13 @@
+// static/js/salesFlow.js
+console.log("🚀 salesFlow.js loaded");
+
+const sellBtn = document.getElementById("sell-btn");
+
+if (!sellBtn) {
+    console.error("❌ Sell button not found on the page!");
+} else {
+    sellBtn.addEventListener("click", () => {
+        console.log("✅ Sell button was clicked!");
+        alert("Sell button clicked! Sales flow works."); // simple visual feedback
+    });
+}
