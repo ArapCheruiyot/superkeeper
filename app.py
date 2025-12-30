@@ -304,5 +304,4 @@ if __name__ == "__main__":
     print("[INIT] Preloading FULL cache...")
     refresh_full_item_cache()
     db.collection_group("items").on_snapshot(on_full_item_snapshot)
-
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=7860, debug=False)
